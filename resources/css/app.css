@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Arial Rounded MT Bold', serif;
+}
+
+.user-icon-container:hover img {
+    content: url('/public/user-icon-hover.svg');
+}
+
+.admin-icon-container:hover img {
+    content: url('/public/admin-icon-hover.svg');
+}
+
+.logout-icon-container:hover img {
+    content: url('/public/logout-icon-hover.svg');
+}
+
+.cart-icon-container:hover img {
+    content: url('/public/cart-icon-hover.svg');
+}
+
+.cart-icon-white-container:hover img {
+    content: url('/public/cart-icon-white.svg');
+}
+
+@keyframes spin-slow {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.animate-spin-slow {
+    animation: spin-slow 0.5s;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
